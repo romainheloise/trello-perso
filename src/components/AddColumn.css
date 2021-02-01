@@ -1,0 +1,54 @@
+.add-column {
+  display: flex;
+  margin: 10px;
+  
+}
+
+.add-column-plus button {
+  background-color: var(--color-one);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.add-column-pop {
+  display: flex;
+  position: absolute;
+  left: 60px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.add-column-pop h4 {
+  background-color: var(--color-three);
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-column-pop button {
+  border: none;
+  background-color: var(--color-three);
+  border-radius: 0 5px 5px 0;
+  transition: 0.2s;
+  flex: 1;
+}
+
+.add-column-pop button:hover {
+  background-color: var(--color-one);
+}
+
+.add-column-pop input {
+  border: var(--color-three) 3px solid;
+  background-color: var(--color-one);
+  flex: 2;
+  padding: 5px;
+}

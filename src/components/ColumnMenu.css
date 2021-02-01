@@ -1,0 +1,45 @@
+.column-menu-all {
+  position: absolute;
+  top: -5px;
+  left: 210px;
+  z-index: 2;
+}
+
+.column-menu-all ul {
+  list-style: none;
+  background-color: var(--color-one);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 150px;
+}
+
+.column-menu-all li:hover {
+  background-color: var(--color-two);
+  border-radius: 5px;
+}
+
+.column-menu-all li:nth-child(4) {
+  display: flex;
+}
+
+.column-menu-all button {
+  width: 50px;
+  border: none;
+  background-color: var(--color-three);
+  border-radius: 0 5px 5px 0;
+  transition: 0.2s;
+}
+
+.column-menu-all button:hover {
+  background-color: var(--color-four);
+}
+
+.column-menu-all input {
+  border: var(--color-three) 2px solid;
+  background-color: var(--color-two);
+  border-radius: 5px 0 0 5px;
+ 
+}

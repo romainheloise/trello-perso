@@ -1,0 +1,61 @@
+.column-all {
+  display: flex;
+}
+
+.column-solo {
+  margin: 10px;
+  width: 200px;
+  background-color: var(--color-three);
+  border-radius: 5px;
+  padding: 5px;
+  height: fit-content;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.column-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.column-top p {
+  transition: 0.2s;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.column-top p:hover {
+  color: var(--color-two);
+}
+
+.column-items-container {
+  background-color: var(--color-one);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.column-additems {
+  display: flex;
+}
+
+.column-additems button {
+  width: 50px;
+  border: none;
+  background-color: var(--color-three);
+  border-radius: 0 5px 5px 0;
+  transition: 0.2s;
+}
+
+.column-additems button:hover {
+  background-color: var(--color-four);
+}
+
+.column-additems input {
+  border: var(--color-three) 2px solid;
+  background-color: var(--color-two);
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+}
