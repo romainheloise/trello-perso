@@ -62,6 +62,18 @@ export const columnSlice = createSlice({
     modifyColumnTitle(state, action) {
       state.dash[action.payload.id].name = action.payload.value;
     },
+
+    dropItem(state, action) {
+      const start = action.payload.start;
+      const end = action.payload.end;
+      const columnId = parseInt(action.payload.column.split("-")[1]);
+      const movingItem = state.dash[columnId].list[start];
+      let modifyOrder = state.dash[columnId].list.filter(
+        (item, index) => index !== start
+      );
+      modifyOrder.splice(end, 0, movingItem);
+      state.dash[columnId].list = [...modifyOrder];
+    },
   },
 });
 
@@ -73,6 +85,7 @@ export const {
   removeColumn,
   outSideDisplay,
   modifyColumnTitle,
+  dropItem,
 } = columnSlice.actions;
 
 export default columnSlice.reducer;

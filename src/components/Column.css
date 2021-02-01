@@ -35,6 +35,8 @@
   background-color: var(--color-one);
   padding: 10px;
   border-radius: 5px;
+  height: fit-content;
+  transition: 0.2s;
 }
 
 .column-additems {
