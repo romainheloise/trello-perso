@@ -1,7 +1,7 @@
 .column-menu-all {
   position: absolute;
-  top: -5px;
-  left: 210px;
+  top: 0px;
+  left: 20px;
   z-index: 2;
 }
 
